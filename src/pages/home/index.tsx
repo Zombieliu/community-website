@@ -12,29 +12,34 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
     {
-        name: 'Inbox',
-        description: 'Get a better understanding of where your traffic is coming from.',
+        name: 'Navigation',
+        description: 'You can find all the included Web3.0 games from here!',
         href: '#',
         icon: InboxIcon,
     },
     {
-        name: 'Messaging',
-        description: 'Speak directly to your customers in a more meaningful way.',
+        name: 'Hackathons',
+        description: 'Get comrades and bonuses for creating web3.0 games with you from here.',
         href: '#',
         icon: AnnotationIcon,
     },
-    { name: 'Live Chat', description: "Your customers' data will be safe and secure.", href: '#', icon: ChatAlt2Icon },
+    {
+        name: 'Grant',
+        description: "The community will help you make your dream of web3.0 games in all directions.",
+        href: '#',
+        icon: ChatAlt2Icon
+    },
     {
         name: 'Knowledge Base',
-        description: "Connect with third-party tools that you're already using.",
+        description: "You can answer all your questions here.",
         href: '#',
         icon: QuestionMarkCircleIcon,
     },
 ]
 const navigation = [
-    { name: 'Pricing', href: '#' },
-    { name: 'Partners', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Contact', href: '#' },
+    { name: 'Community', href: '#' },
+    { name: 'Contributors', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -73,7 +78,7 @@ export default function Home() {
                                                 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                                             )}
                                         >
-                                            <span>Solutions</span>
+                                            <span>Product</span>
                                             <ChevronDownIcon
                                                 className={classNames(
                                                     open ? 'text-gray-600' : 'text-gray-400',
@@ -125,15 +130,15 @@ export default function Home() {
                             ))}
                         </Popover.Group>
                         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                                Sign in
-                            </a>
-                            <a
-                                href="#"
-                                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Sign up
-                            </a>
+                            {/*<a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">*/}
+                            {/*    Sign in*/}
+                            {/*</a>*/}
+                            {/*<a*/}
+                            {/*    href="#"*/}
+                            {/*    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"*/}
+                            {/*>*/}
+                            {/*    Sign up*/}
+                            {/*</a>*/}
                         </div>
                     </div>
 
@@ -234,12 +239,11 @@ export default function Home() {
                                 </div>
                                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                                     <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                                        <span className="block text-white">Take control of your</span>
-                                        <span className="block text-indigo-200">customer support</span>
+                                        <span className="block text-white">Build Web3.0 Games </span>
+                                        <span className="block text-indigo-200">with us</span>
                                     </h1>
                                     <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                                        amet fugiat veniam occaecat fugiat aliqua.
+                                        PlayerLink is an emerging game co-construction community, aiming to promote Web3.0 games together with community members
                                     </p>
                                     <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                                         <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -247,13 +251,13 @@ export default function Home() {
                                                 href="#"
                                                 className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
                                             >
-                                                Get started
+                                                Join us
                                             </a>
                                             <a
                                                 href="#"
                                                 className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
                                             >
-                                                Live demo
+                                                Live video
                                             </a>
                                         </div>
                                     </div>
@@ -270,29 +274,29 @@ export default function Home() {
                             </p>
                             <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                    <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+                                    <img className="h-12" src="https://web3games-dev.oss-cn-hongkong.aliyuncs.com/logo/web3game-logo-horizontal-black.svg" alt="Tuple" />
                                 </div>
                                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                    <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+                                    <img className="h-12" src="https://cryptoempire.games/home-banner-logo.png" alt="Mirage" />
                                 </div>
                                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                                     <img
                                         className="h-12"
-                                        src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                                        src="https://oct.network/assets/img/brand/octopus_logo_black.png"
                                         alt="StaticKit"
                                     />
                                 </div>
                                 <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
                                     <img
                                         className="h-12"
-                                        src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                                        src="https://web3games-client-web.oss-accelerate.aliyuncs.com/home-network-near.png"
                                         alt="Transistor"
                                     />
                                 </div>
                                 <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
                                     <img
                                         className="h-12"
-                                        src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                                        src="https://web3games-client-web.oss-accelerate.aliyuncs.com/home-network-substrate.png"
                                         alt="Workcation"
                                     />
                                 </div>
@@ -300,7 +304,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
                 {/* More main page content here... */}
             </main>
         </div>
