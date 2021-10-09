@@ -14,7 +14,7 @@ const solutions = [
     {
         name: 'Navigation',
         description: 'You can find all the included Web3.0 games from here!',
-        href: '#',
+        href: 'https://www.playerlink.org/',
         icon: InboxIcon,
     },
     {
