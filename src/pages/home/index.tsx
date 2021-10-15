@@ -37,9 +37,9 @@ const solutions = [
     },
 ]
 const navigation = [
-    { name: 'Contact', href: '#' },
-    { name: 'Community', href: '#' },
-    { name: 'Contributors', href: '#' },
+    { name: 'Contact', href: 'contact' },
+    { name: 'Community', href: 'community' },
+    { name: 'Contributors', href: 'contributors' },
 ]
 
 function classNames(...classes) {
