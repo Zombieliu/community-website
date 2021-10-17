@@ -11,6 +11,7 @@ import {
 } from "@heroicons/react/outline";
 import {ChevronDownIcon} from "@heroicons/react/solid";
 import {Fragment} from "react";
+import Link from "next/link";
 const solutions = [
     {
         name: 'Navigation',
@@ -52,14 +53,14 @@ export default function Team() {
                 <Popover className="relative bg-white">
                     <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
-                            <a href="/#">
+                            <Link href="/#"><a >
                                 <span className="sr-only">Workflow</span>
                                 <img
                                     className="h-8 w-auto sm:h-10"
                                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                                     alt=""
-                                />
-                            </a>
+                                /></a>
+                            </Link>
                         </div>
                         <div className="-mr-2 -my-2 md:hidden">
                             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

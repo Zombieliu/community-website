@@ -303,9 +303,12 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+
                 </div>
                 {/* More main page content here... */}
             </main>
+
         </div>
+
     )
 }
