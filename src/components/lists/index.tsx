@@ -251,24 +251,23 @@ export default function Lists(){
                     </Transition>
                 </Popover>
             </header>
-            <div className='titles'>
-                <div className='header'>
-                    <div className='main'>PlayerLink</div>
-                    <div className='sub'>Contributors</div>
+            <div className='m-5 md:ml-48 md:mr-48 md:mt-16 md:content-around leading-7'>
+                <div className='text-center m-5'>
+                    <div className=' m-3 text-4xl font-extrabold'>PlayerLink</div>
+                    <div className='text-xl'>Contributors</div>
                 </div>
-            </div>
-            <div className='text-outer'>
+            <div className='flex flex-wrap md:justify-between '>
             {people.map((person) => (
-                <div  key={person.name}className='text-box'>
+                <div  key={person.name}className=' duration-300 hover:shadow-2xl  hover:border-transparent hover:shadow-xs border-solid border-gray-100 border-2 m-5 rounded-lg'>
                 <div >
-                        <div className="text-name">{person.name}</div>
-                <div><img className='text-tu' src={person.imageUrl }
+                        <div className="font-semibold m-2">{person.name}</div>
+                <div><img className='border-solid border-gray-300 border-b-2 border-t-2 md:w-72 md:h-72 ' src={person.imageUrl }
                                      alt=""/></div>
-                        <div className='text-text'>
-                                <p className="text-indigo-600">{person.role}</p>
+                        <div className='m-2'>
+                                <p className="">{person.role}</p>
                                   <p>{person.job}</p>
 
-                                <p>Git: <a className="text-a" href={person.git}>
+                                <p>Git: <a className="text-blue-400" href={person.git}>
                                     {person.git}
                                 </a></p>
                             </div>
@@ -277,5 +276,6 @@ export default function Lists(){
                 ))}
         </div>
         </div>
+     </div>
     )
 }

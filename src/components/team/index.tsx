@@ -213,25 +213,27 @@ export default function Team() {
                     </Transition>
                 </Popover>
             </header>
-
-            <div className='titles'>
-                <div className='header'>
-                    <div className='main'>钓鱼达人</div>
-                    <div className='sub'>——Web3的全新游戏</div>
+            <div className="m-5 md:ml-48 md:mr-48 md:mt-16 md:content-around leading-7">
+            <div className='text-center'>
+                <div className='m-5'>
+                    <div className=' m-3 text-4xl font-extrabold'>钓鱼达人</div>
+                    <div className='text-xl'>——Web3的全新游戏</div>
                 </div>
             </div>
-            <div className='section'>
-              <div className='section-name'>玩法</div>
+
+            <div className='mb-3'>
+              <div className='font-semibold'>玩法</div>
             </div>
-            <div className='title1'>
+            <div className=''>
                <p>钓鱼游戏与传统游戏并不一样，它是区块链技术和传统游戏碰撞后产生的新的产物，区块链游戏本身很难改变游戏的表现形式，游戏类型，但是却能组合后给游戏本身的游戏玩法，产品的商业形式发生改变，从而衍生新的营收模式。</p>
             </div>
-            <div className='section-2'>
-                <div className='section-rules'>规则</div>
+            <div className='mb-3 mt-3'>
+                <div className='font-semibold'>规则</div>
                 </div>
-            <div className='title1'>
+            <div className=''>
                 <p>钓鱼专家中的核心游戏规则，钓上的鱼，内购的货币均是采用原生区块链协议实现。 因此具有以下的好处 玩家真正意义上拥有‘虚拟道具’或者说游戏资产的所有权，我们称它为数字游戏资产，那么钓鱼专家也可以称为下一代游戏‘数字游戏’那么于此对应的好处就是，玩家无需担心游戏制作方，运营方在未经许可的情况下肆意修改游戏道具的数值从而‘抽水’通过迭代更新获取产品收益。当然正常的更新是允许的，这需要经过批准，除此之外玩家之间可以随意进行自己数字游戏资产的收藏，交换，出售，租借等功能。</p>
             </div>
+        </div>
         </div>
 
 

@@ -213,10 +213,12 @@ export default function About() {
                     </Transition>
                 </Popover>
             </header>
-            <div className='titles'>
-                <div className='header'>
-                    <div className='main'>Contact Us</div>
-                    <div><img className='sub-tu' src="https://cdn.discordapp.com/attachments/897398778166906911/897504553799393360/image0.jpg" alt=""/></div>
+            <div className=' md:ml-48 md:mr-48 md:mt-16 md:content-around leading-7'>
+                <div className=' m-10 md:justify-between'>
+                    <div className='m-3 text-4xl text-center font-extrabold'>Contact Us</div>
+                    <div className=' h-36 w-36 mt-10  ml-auto mr-auto'>
+                 <img  className=" "src="https://cdn.discordapp.com/attachments/882986018280726578/883177945320017920/chainlink.png" alt=""/>
+                    </div>
 
                 </div>
             </div>
