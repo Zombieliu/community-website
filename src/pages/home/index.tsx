@@ -161,7 +161,7 @@ export default function Home() {
                                         <div>
                                             <img
                                                 className="h-8 w-auto"
-                                                src="/logo.svg"
+                                                src="/logo.png"
                                                 alt="Workflow"
                                             />
                                         </div>
