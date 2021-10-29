@@ -1,15 +1,52 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import {Popover, Transition} from "@headlessui/react";
 import {
     AnnotationIcon,
     ChatAlt2Icon,
     InboxIcon,
     MenuIcon,
     QuestionMarkCircleIcon,
-    XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+    XIcon
+} from "@heroicons/react/outline";
+import {ChevronDownIcon} from "@heroicons/react/solid";
+import {Fragment} from "react";
+import Link from "next/link";
 
+
+const people = [
+    {
+        job:"Full Stack , Blockchain Engineer  ",
+        name: 'HenryLiu',
+        role: 'PlayerLink / Contributors',
+        git:
+            'https://github.com/Zombieliu',
+        imageUrl:
+            'https://cdn.discordapp.com/attachments/882986018280726578/883178197846470666/inch.png',
+    },
+    {
+        job:'Front End Engineer',
+        name: 'DavidXing',
+        role: 'PlayerLink / Contributors',
+        git:'https://github.com/Davidxing1',
+        imageUrl:
+            'https://cdn.discordapp.com/attachments/882986018280726578/883177945320017920/chainlink.png',
+    },
+    {
+        job:'UI UX Designer',
+        name:'AbelWang',
+        role:'PlayerLink /Contributors',
+        git:'',
+        imageUrl:
+            'https://cdn.discordapp.com/attachments/882986018280726578/883178356537974814/usdt.png',
+    },
+    {
+        job:'Community Operating',
+        name:'JoanMa',
+        role:'Playerlink /Contributors',
+        git:'',
+        imageUrl:
+            'https://cdn.discordapp.com/attachments/882986018280726578/883178027457069086/curve.png',
+    },
+]
 const solutions = [
     {
         name: 'Navigation',
@@ -41,26 +78,27 @@ const navigation = [
     { name: 'Community', href: 'community' },
     { name: 'Contributors', href: 'contributors' },
 ]
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Home() {
-    return (
-        <div className="min-h-screen bg-white">
+
+export default function Lists(){
+    return(
+
+        <div className='app'>
             <header>
                 <Popover className="relative bg-white">
                     <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
-                            <a href="#">
-                                <span className="sr-only">Work flow</span>
+                            <Link href="/#"><a >
+                                <span className="sr-only">Workflow</span>
                                 <img
                                     className="h-8 w-auto sm:h-10"
                                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                                     alt=""
-                                />
-                            </a>
+                                /></a>
+                            </Link>
                         </div>
                         <div className="-mr-2 -my-2 md:hidden">
                             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -130,15 +168,7 @@ export default function Home() {
                             ))}
                         </Popover.Group>
                         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                            {/*<a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">*/}
-                            {/*    Sign in*/}
-                            {/*</a>*/}
-                            {/*<a*/}
-                            {/*    href="#"*/}
-                            {/*    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"*/}
-                            {/*>*/}
-                            {/*    Sign up*/}
-                            {/*</a>*/}
+
                         </div>
                     </div>
 
@@ -221,94 +251,31 @@ export default function Home() {
                     </Transition>
                 </Popover>
             </header>
-
-            <main>
-                <div>
-                    {/* Hero card */}
-                    <div className="relative">
-                        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-                        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                            <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-                                <div className="absolute inset-0">
-                                    <img
-                                        className="h-full w-full object-cover"
-                                        src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                                        alt="People working on laptops"
-                                    />
-                                    <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
-                                </div>
-                                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                                    <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                                        <span className="block text-white">Build Web3.0 Games </span>
-                                        <span className="block text-indigo-200">with us</span>
-                                    </h1>
-                                    <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                                        PlayerLink is an emerging game co-construction community, aiming to promote Web3.0 games together with community members
-                                    </p>
-                                    <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                                        <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                                            <a
-                                                href="#"
-                                                className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
-                                            >
-                                                Join us
-                                            </a>
-                                            <a
-                                                href="#"
-                                                className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
-                                            >
-                                                Live video
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Logo cloud */}
-                    <div className="bg-gray-100">
-                        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                            <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-                                Trusted by over 5 very average small businesses
-                            </p>
-                            <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                    <img className="h-12" src="https://web3games-dev.oss-cn-hongkong.aliyuncs.com/logo/web3game-logo-horizontal-black.svg" alt="Tuple" />
-                                </div>
-                                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                    <img className="h-12" src="https://cryptoempire.games/home-banner-logo.png" alt="Mirage" />
-                                </div>
-                                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                    <img
-                                        className="h-12"
-                                        src="https://oct.network/assets/img/brand/octopus_logo_black.png"
-                                        alt="StaticKit"
-                                    />
-                                </div>
-                                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                                    <img
-                                        className="h-12"
-                                        src="https://web3games-client-web.oss-accelerate.aliyuncs.com/home-network-near.png"
-                                        alt="Transistor"
-                                    />
-                                </div>
-                                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                                    <img
-                                        className="h-12"
-                                        src="https://web3games-client-web.oss-accelerate.aliyuncs.com/home-network-substrate.png"
-                                        alt="Workcation"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <div className='m-5 md:ml-48 md:mr-48 md:mt-16 md:content-around leading-7'>
+                <div className='text-center m-5'>
+                    <div className=' m-3 text-4xl font-extrabold'>PlayerLink</div>
+                    <div className='text-xl'>Contributors</div>
                 </div>
-                {/* More main page content here... */}
-            </main>
+            <div className='flex flex-wrap md:justify-between '>
+            {people.map((person) => (
+                <div  key={person.name}className='w-72 duration-300 transform duration-700 hover:shadow-2xl hover:-translate-y-3 border-solid border-gray-100 border-2 m-5 rounded-lg'>
+                <div >
+                        <div className="font-semibold m-2">{person.name}</div>
+                <div><img className='border-solid border-gray-300 border-b-2 border-t-2 md:w-72 md:h-72 ' src={person.imageUrl }
+                                     alt=""/></div>
+                        <div className='m-2'>
+                                <p className="">{person.role}</p>
+                                  <p>{person.job}</p>
 
+                                <p>Git: <a className="text-blue-400" href={person.git}>
+                                    {person.git}
+                                </a></p>
+                            </div>
+                    </div>
+                </div>
+                ))}
         </div>
-
+        </div>
+     </div>
     )
 }
