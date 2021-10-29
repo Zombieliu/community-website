@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const people = [
     {
-        job:"Full Stack , Blockchain Engineer",
+        job:"Full Stack , Blockchain Engineer  ",
         name: 'HenryLiu',
         role: 'PlayerLink / Contributors',
         git:
@@ -258,7 +258,7 @@ export default function Lists(){
                 </div>
             <div className='flex flex-wrap md:justify-between '>
             {people.map((person) => (
-                <div  key={person.name}className=' duration-300 hover:shadow-2xl  hover:border-transparent hover:shadow-xs border-solid border-gray-100 border-2 m-5 rounded-lg'>
+                <div  key={person.name}className='w-72 duration-300 transform duration-700 hover:shadow-2xl hover:-translate-y-3 border-solid border-gray-100 border-2 m-5 rounded-lg'>
                 <div >
                         <div className="font-semibold m-2">{person.name}</div>
                 <div><img className='border-solid border-gray-300 border-b-2 border-t-2 md:w-72 md:h-72 ' src={person.imageUrl }
