@@ -56,8 +56,8 @@ export default function Home() {
                             <a href="#">
                                 <span className="sr-only">Work flow</span>
                                 <img
-                                    className="h-8 w-auto sm:h-10"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                    className="h-12s w-auto sm:h-16"
+                                    src="/logo.png"
                                     alt=""
                                 />
                             </a>
@@ -161,7 +161,7 @@ export default function Home() {
                                         <div>
                                             <img
                                                 className="h-8 w-auto"
-                                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                                src="/logo.svg"
                                                 alt="Workflow"
                                             />
                                         </div>
