@@ -256,7 +256,7 @@ export default function Lists(){
                     <div className=' m-3 text-4xl font-extrabold'>PlayerLink</div>
                     <div className='text-xl'>Contributors</div>
                 </div>
-            <div className='flex flex-wrap md:justify-between '>
+            <div className='flex flex-wrap justify-center md:justify-between '>
             {people.map((person) => (
                 <div  key={person.name}className='w-72 duration-300 transform duration-700 hover:shadow-2xl hover:-translate-y-3 border-solid border-gray-100 border-2 m-5 rounded-lg'>
                 <div >
